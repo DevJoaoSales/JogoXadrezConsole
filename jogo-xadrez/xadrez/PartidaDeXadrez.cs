@@ -28,7 +28,9 @@ internal class PartidaDeXadrez {
     }
 
     private void colocarPecas() {
-        tab.colocarPeca( new Torre(tab, Cor.Preta), new PosicaoXadrez('c',1).ToPosicao() );
+        tab.colocarPeca(new Torre(tab, Cor.Preta), new PosicaoXadrez('c', 1).ToPosicao());
+        tab.colocarPeca(new Torre(tab, Cor.Preta), new PosicaoXadrez('e', 1).ToPosicao());
+        tab.colocarPeca(new Rei(tab, Cor.Preta), new PosicaoXadrez('d', 1).ToPosicao());
     }
 }
 
