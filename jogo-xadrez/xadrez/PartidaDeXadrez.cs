@@ -191,11 +191,16 @@ internal class PartidaDeXadrez {
     private void colocarPecas() {
         colocarNovaPeca('c', 1, new Torre(tab, Cor.Branca));
         colocarNovaPeca('h', 7, new Torre(tab, Cor.Branca));
-        colocarNovaPeca('d', 1, new  Rei(tab, Cor.Branca));
+        colocarNovaPeca('d', 1, new Rei(tab, Cor.Branca));
+        colocarNovaPeca('d', 3, new Peao(tab, Cor.Branca));
+        colocarNovaPeca('c', 2, new Peao(tab, Cor.Branca));
 
 
         colocarNovaPeca('b', 8, new Torre(tab, Cor.Preta));
         colocarNovaPeca('a', 8, new Rei(tab, Cor.Preta));
+
+        colocarNovaPeca('e', 4, new Peao(tab, Cor.Preta));
+        colocarNovaPeca('f', 7, new Peao(tab, Cor.Preta));
     }
 }
 
